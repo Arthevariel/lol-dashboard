@@ -63,6 +63,30 @@
   .mh-kda-ratio{font-size:.68rem;color:var(--text);}
   .mh-cs,.mh-dmg,.mh-dur{color:var(--text);font-size:.82rem;}
   .mh-lp{font-weight:700;text-align:right;}
+  .mh-clickable{cursor:pointer;transition:border-color .15s;}
+  .mh-clickable:hover{border-color:var(--gold);}
+  .mh-caret{margin-left:.4rem;font-size:.7rem;color:var(--text);display:inline-block;transition:transform .2s;}
+  .mh-row.expanded .mh-caret{transform:rotate(180deg);}
+  .sb-panel{display:none;margin:-.2rem 0 .6rem;padding:1rem;border:1px solid var(--hairline);border-top:none;border-radius:0 0 4px 4px;background:#01080f;}
+  .sb-panel.open{display:block;animation:fade .25s ease;}
+  .sb-team{margin-bottom:1rem;}
+  .sb-team:last-child{margin-bottom:0;}
+  .sb-team-head{font-family:'Marcellus',serif;font-size:1rem;margin-bottom:.5rem;display:flex;align-items:baseline;gap:.6rem;}
+  .sb-win .sb-team-head{color:var(--good);}
+  .sb-loss .sb-team-head{color:var(--bad);}
+  .sb-team-label{font-family:'Inter';font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text);opacity:.7;}
+  .sb-col-head,.sb-row{display:grid;grid-template-columns:1.4fr 1.2fr .9fr .9fr .8fr .5fr;gap:.5rem;align-items:center;}
+  .sb-col-head{padding:.3rem .6rem;font-size:.64rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text);opacity:.6;}
+  .sb-row{padding:.4rem .6rem;border-radius:3px;font-size:.8rem;}
+  .sb-row.sb-me{background:linear-gradient(90deg,#c8aa6e22,transparent);border:1px solid #c8aa6e55;}
+  .sb-champ{color:var(--text-bright);font-weight:600;display:flex;flex-direction:column;}
+  .sb-role{font-size:.62rem;color:var(--text);font-weight:400;}
+  .sb-name{color:var(--text);font-size:.76rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .sb-me .sb-name{color:var(--gold);font-weight:600;}
+  .sb-kda{color:var(--text-bright);display:flex;flex-direction:column;}
+  .sb-kda-r{font-size:.62rem;color:var(--text);}
+  .sb-cs,.sb-dmg,.sb-vis{color:var(--text);font-size:.78rem;}
+  .sb-dim{color:var(--text);opacity:.55;font-size:.68rem;}
   .ms-card{background:var(--bg-card);border:1px solid var(--hairline);border-radius:4px;padding:1.5rem;margin-bottom:1.5rem;}
   .ms-title{font-family:'Marcellus',serif;font-size:1.3rem;color:var(--gold);margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:1px solid var(--hairline);}
   .ms-totals{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem;margin-bottom:1.5rem;}
@@ -126,7 +150,7 @@
 </style></head>
 <body><div class="wrap">
   <header><div class="eyebrow">Select a Console</div><h1>Rift <span class="accent">Console</span></h1>
-    <div class="subtitle">Internal dashboards for the squad · updated 17-8-2026, 13:13:56</div></header>
+    <div class="subtitle">Internal dashboards for the squad · updated 17-8-2026, 13:14:58</div></header>
   <div id="home">
     <div class="console-grid"><button class="console-card" data-target="leaderboard">
     <div class="cc-icon">🏆</div><div class="cc-arrow">→</div>
@@ -177,7 +201,8 @@
         <div class="mh-cs">218 cs</div>
         <div class="mh-dmg">25,565</div>
         <div class="mh-dur">35m</div>
-        <div class="mh-lp bad">-22</div></div></div></div>
+        <div class="mh-lp bad">-22</div>
+      </div></div></div>
   <div class="panel" id="p-profiles"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Player Profiles</div></div><div class="card-grid"><div class="profile" style="--accent:#e0a736">
       <div class="profile-head"><div class="profile-name">Arthevariel#666</div>
       <div class="profile-rank" style="color:#e0a736">GOLD IV · 9 LP</div></div>
@@ -516,5 +541,11 @@
     window.scrollTo({top:0,behavior:'smooth'});
   }));
   function showHome(){panels.forEach(p=>p.classList.remove('active'));home.style.display='block';window.scrollTo({top:0,behavior:'smooth'});}
+  function toggleSb(id, row){
+    const panel=document.getElementById(id);
+    if(!panel)return;
+    const open=panel.classList.toggle('open');
+    row.classList.toggle('expanded', open);
+  }
 </script>
 </body></html>

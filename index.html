@@ -150,15 +150,15 @@
 </style></head>
 <body><div class="wrap">
   <header><div class="eyebrow">Select a Console</div><h1>Rift <span class="accent">Console</span></h1>
-    <div class="subtitle">Internal dashboards for the squad · updated 17-8-2026, 15:42:17</div></header>
+    <div class="subtitle">Internal dashboards for the squad · updated 17-8-2026, 22:24:21</div></header>
   <div id="home">
     <div class="console-grid"><button class="console-card" data-target="leaderboard">
     <div class="cc-icon">🏆</div><div class="cc-arrow">→</div>
     <div class="cc-title">Leaderboard</div><div class="cc-desc">Everyone ranked by current LP</div><div class="cc-meta">5 tracked</div></button><button class="console-card" data-target="history">
     <div class="cc-icon">📜</div><div class="cc-arrow">→</div>
-    <div class="cc-title">Match History</div><div class="cc-desc">Last 20 games per player</div><div class="cc-meta">3 logged</div></button><button class="console-card" data-target="profiles">
+    <div class="cc-title">Match History</div><div class="cc-desc">Last 20 games per player</div><div class="cc-meta">4 logged</div></button><button class="console-card" data-target="profiles">
     <div class="cc-icon">👤</div><div class="cc-arrow">→</div>
-    <div class="cc-title">Player Profiles</div><div class="cc-desc">Season & daily snapshot</div><div class="cc-meta">3 today</div></button><button class="console-card" data-target="lifetime">
+    <div class="cc-title">Player Profiles</div><div class="cc-desc">Season & daily snapshot</div><div class="cc-meta">4 today</div></button><button class="console-card" data-target="lifetime">
     <div class="cc-icon">🏅</div><div class="cc-arrow">→</div>
     <div class="cc-title">Lifetime & Milestones</div><div class="cc-desc">Career totals and progress</div><div class="cc-meta">Since tracking began</div></button><button class="console-card" data-target="hof">
     <div class="cc-icon">⭐</div><div class="cc-arrow">→</div>
@@ -175,15 +175,15 @@
     <div class="cc-title">Record Activity</div><div class="cc-desc">Records changing hands</div><div class="cc-meta">7 days</div></button></div>
     <div class="statbar">
       <div class="stat-cell"><div class="stat-big">5</div><div class="stat-label">Players tracked</div></div>
-      <div class="stat-cell"><div class="stat-big">3</div><div class="stat-label">Games today</div></div>
-      <div class="stat-cell"><div class="stat-big">3</div><div class="stat-label">Games logged</div></div>
+      <div class="stat-cell"><div class="stat-big">4</div><div class="stat-label">Games today</div></div>
+      <div class="stat-cell"><div class="stat-big">4</div><div class="stat-label">Games logged</div></div>
       <div class="stat-cell"><div class="stat-big">GOLD IV</div><div class="stat-label">Top rank</div></div>
       <div class="stat-cell"><div class="stat-big">Arthevariel</div><div class="stat-label">Weekly int</div></div>
     </div>
   </div>
   <div class="panel" id="p-leaderboard"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Leaderboard</div></div><div class="lb-row"><div class="lb-pos">1</div><div class="lb-name">Arthevariel#666</div>
-      <div class="lb-rank" style="color:#e0a736">GOLD IV · 45 LP</div>
-      <div class="lb-wr">131W/141L · 48%</div></div><div class="lb-row"><div class="lb-pos">2</div><div class="lb-name">Poepert#4217</div>
+      <div class="lb-rank" style="color:#e0a736">GOLD IV · 63 LP</div>
+      <div class="lb-wr">132W/141L · 48%</div></div><div class="lb-row"><div class="lb-pos">2</div><div class="lb-name">Poepert#4217</div>
       <div class="lb-rank" style="color:#9fb2c4">SILVER IV · 37 LP</div>
       <div class="lb-wr">217W/226L · 49%</div></div><div class="lb-row"><div class="lb-pos">3</div><div class="lb-name">Kocheri#000</div>
       <div class="lb-rank" style="color:#b06a3b">BRONZE I · 21 LP</div>
@@ -192,9 +192,98 @@
       <div class="lb-wr">9W/3L · 75%</div></div><div class="lb-row"><div class="lb-pos">5</div><div class="lb-name">67 Machine 69#6767</div>
       <div class="lb-rank" style="color:#b06a3b">BRONZE III · 44 LP</div>
       <div class="lb-wr">10W/3L · 77%</div></div></div>
-  <div class="panel" id="p-history"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Match History</div></div><div class="mh-block"><div class="mh-title">Arthevariel#666<span class="mh-count">last 3</span></div>
+  <div class="panel" id="p-history"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Match History</div></div><div class="mh-block"><div class="mh-title">Arthevariel#666<span class="mh-count">last 4</span></div>
       <div class="mh-head"><div></div><div>Champion</div><div>K/D/A</div><div>CS</div><div>DMG</div><div>Time</div><div>LP</div></div>
       <div class="mh-row win mh-clickable" onclick="toggleSb('mh0', this)">
+        <div class="mh-result">W</div>
+        <div class="mh-champ">Syndra<span class="mh-role">Mid</span></div>
+        <div class="mh-kda">19/14/14<span class="mh-kda-ratio">2.36</span></div>
+        <div class="mh-cs">295 cs</div>
+        <div class="mh-dmg">58,858</div>
+        <div class="mh-dur">43m</div>
+        <div class="mh-lp good">+18<span class="mh-caret">▾</span></div>
+      </div><div class="sb-panel" id="mh0">
+          <div class="sb-team sb-loss">
+            <div class="sb-team-head">🔴 Defeat<span class="sb-team-label">Blue side</span></div>
+            <div class="sb-col-head"><span>Champion</span><span>Player</span><span>K/D/A</span><span>CS</span><span>DMG</span><span>Vis</span></div>
+            <div class="sb-row">
+              <span class="sb-champ">Yasuo<span class="sb-role">Top</span></span>
+              <span class="sb-name">small dic energy</span>
+              <span class="sb-kda">10/7/6<span class="sb-kda-r">2.29</span></span>
+              <span class="sb-cs">361 <span class="sb-dim">(8.4)</span></span>
+              <span class="sb-dmg">55,228</span>
+              <span class="sb-vis">33</span>
+            </div><div class="sb-row">
+              <span class="sb-champ">JarvanIV<span class="sb-role">Jungle</span></span>
+              <span class="sb-name">HÖlly</span>
+              <span class="sb-kda">8/10/20<span class="sb-kda-r">2.80</span></span>
+              <span class="sb-cs">232 <span class="sb-dim">(5.4)</span></span>
+              <span class="sb-dmg">41,057</span>
+              <span class="sb-vis">19</span>
+            </div><div class="sb-row">
+              <span class="sb-champ">Fizz<span class="sb-role">Mid</span></span>
+              <span class="sb-name">nicokiler</span>
+              <span class="sb-kda">23/12/8<span class="sb-kda-r">2.58</span></span>
+              <span class="sb-cs">200 <span class="sb-dim">(4.7)</span></span>
+              <span class="sb-dmg">63,499</span>
+              <span class="sb-vis">13</span>
+            </div><div class="sb-row">
+              <span class="sb-champ">Mel<span class="sb-role">ADC</span></span>
+              <span class="sb-name">SupankinGuGodze</span>
+              <span class="sb-kda">10/13/7<span class="sb-kda-r">1.31</span></span>
+              <span class="sb-cs">271 <span class="sb-dim">(6.3)</span></span>
+              <span class="sb-dmg">43,599</span>
+              <span class="sb-vis">37</span>
+            </div><div class="sb-row">
+              <span class="sb-champ">Janna<span class="sb-role">Support</span></span>
+              <span class="sb-name">Gin0BuonGin0</span>
+              <span class="sb-kda">3/14/20<span class="sb-kda-r">1.64</span></span>
+              <span class="sb-cs">33 <span class="sb-dim">(0.8)</span></span>
+              <span class="sb-dmg">14,763</span>
+              <span class="sb-vis">102</span>
+            </div>
+          </div>
+          <div class="sb-team sb-win">
+            <div class="sb-team-head">🟢 Victory<span class="sb-team-label">Red side</span></div>
+            <div class="sb-col-head"><span>Champion</span><span>Player</span><span>K/D/A</span><span>CS</span><span>DMG</span><span>Vis</span></div>
+            <div class="sb-row">
+              <span class="sb-champ">Yorick<span class="sb-role">Top</span></span>
+              <span class="sb-name">Uneashamin</span>
+              <span class="sb-kda">10/9/2<span class="sb-kda-r">1.33</span></span>
+              <span class="sb-cs">326 <span class="sb-dim">(7.6)</span></span>
+              <span class="sb-dmg">44,224</span>
+              <span class="sb-vis">36</span>
+            </div><div class="sb-row">
+              <span class="sb-champ">Nocturne<span class="sb-role">Jungle</span></span>
+              <span class="sb-name">baderminator 10</span>
+              <span class="sb-kda">17/10/11<span class="sb-kda-r">2.80</span></span>
+              <span class="sb-cs">272 <span class="sb-dim">(6.3)</span></span>
+              <span class="sb-dmg">43,575</span>
+              <span class="sb-vis">47</span>
+            </div><div class="sb-row sb-me">
+              <span class="sb-champ">Syndra<span class="sb-role">Mid</span></span>
+              <span class="sb-name">Arthevariel</span>
+              <span class="sb-kda">19/14/14<span class="sb-kda-r">2.36</span></span>
+              <span class="sb-cs">295 <span class="sb-dim">(6.9)</span></span>
+              <span class="sb-dmg">58,858</span>
+              <span class="sb-vis">28</span>
+            </div><div class="sb-row">
+              <span class="sb-champ">Ezreal<span class="sb-role">ADC</span></span>
+              <span class="sb-name">BEERSASAM</span>
+              <span class="sb-kda">4/13/14<span class="sb-kda-r">1.38</span></span>
+              <span class="sb-cs">247 <span class="sb-dim">(5.7)</span></span>
+              <span class="sb-dmg">39,328</span>
+              <span class="sb-vis">42</span>
+            </div><div class="sb-row">
+              <span class="sb-champ">Rell<span class="sb-role">Support</span></span>
+              <span class="sb-name">Orgensama</span>
+              <span class="sb-kda">6/8/30<span class="sb-kda-r">4.50</span></span>
+              <span class="sb-cs">46 <span class="sb-dim">(1.1)</span></span>
+              <span class="sb-dmg">19,601</span>
+              <span class="sb-vis">120</span>
+            </div>
+          </div>
+        </div><div class="mh-row win mh-clickable" onclick="toggleSb('mh1', this)">
         <div class="mh-result">W</div>
         <div class="mh-champ">Diana<span class="mh-role">Mid</span></div>
         <div class="mh-kda">11/5/3<span class="mh-kda-ratio">2.80</span></div>
@@ -202,7 +291,7 @@
         <div class="mh-dmg">28,806</div>
         <div class="mh-dur">23m</div>
         <div class="mh-lp good">+18<span class="mh-caret">▾</span></div>
-      </div><div class="sb-panel" id="mh0">
+      </div><div class="sb-panel" id="mh1">
           <div class="sb-team sb-win">
             <div class="sb-team-head">🟢 Victory<span class="sb-team-label">Blue side</span></div>
             <div class="sb-col-head"><span>Champion</span><span>Player</span><span>K/D/A</span><span>CS</span><span>DMG</span><span>Vis</span></div>
@@ -283,7 +372,7 @@
               <span class="sb-vis">45</span>
             </div>
           </div>
-        </div><div class="mh-row win mh-clickable" onclick="toggleSb('mh1', this)">
+        </div><div class="mh-row win mh-clickable" onclick="toggleSb('mh2', this)">
         <div class="mh-result">W</div>
         <div class="mh-champ">Diana<span class="mh-role">Mid</span></div>
         <div class="mh-kda">13/6/3<span class="mh-kda-ratio">2.67</span></div>
@@ -291,7 +380,7 @@
         <div class="mh-dmg">27,800</div>
         <div class="mh-dur">26m</div>
         <div class="mh-lp good">+18<span class="mh-caret">▾</span></div>
-      </div><div class="sb-panel" id="mh1">
+      </div><div class="sb-panel" id="mh2">
           <div class="sb-team sb-win">
             <div class="sb-team-head">🟢 Victory<span class="sb-team-label">Blue side</span></div>
             <div class="sb-col-head"><span>Champion</span><span>Player</span><span>K/D/A</span><span>CS</span><span>DMG</span><span>Vis</span></div>
@@ -383,14 +472,14 @@
       </div></div></div>
   <div class="panel" id="p-profiles"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Player Profiles</div></div><div class="card-grid"><div class="profile" style="--accent:#e0a736">
       <div class="profile-head"><div class="profile-name">Arthevariel#666</div>
-      <div class="profile-rank" style="color:#e0a736">GOLD IV · 45 LP</div></div>
+      <div class="profile-rank" style="color:#e0a736">GOLD IV · 63 LP</div></div>
       <div class="profile-grid">
-        <div class="pstat"><span class="pstat-label">Season</span><span class="pstat-val">131W / 141L</span></div>
+        <div class="pstat"><span class="pstat-label">Season</span><span class="pstat-val">132W / 141L</span></div>
         <div class="pstat"><span class="pstat-label">Win rate</span><span class="pstat-val">48%</span></div>
-        <div class="pstat"><span class="pstat-label">Today</span><span class="pstat-val">2W / 1L</span></div>
-        <div class="pstat"><span class="pstat-label">Today LP</span><span class="pstat-val good">+14</span></div>
-        <div class="pstat"><span class="pstat-label">Streak</span><span class="pstat-val good">2W streak</span></div>
-        <div class="pstat"><span class="pstat-label">Lifetime games</span><span class="pstat-val">88</span></div>
+        <div class="pstat"><span class="pstat-label">Today</span><span class="pstat-val">3W / 1L</span></div>
+        <div class="pstat"><span class="pstat-label">Today LP</span><span class="pstat-val good">+32</span></div>
+        <div class="pstat"><span class="pstat-label">Streak</span><span class="pstat-val good">3W streak</span></div>
+        <div class="pstat"><span class="pstat-label">Lifetime games</span><span class="pstat-val">89</span></div>
       </div></div><div class="profile" style="--accent:#9fb2c4">
       <div class="profile-head"><div class="profile-name">Poepert#4217</div>
       <div class="profile-rank" style="color:#9fb2c4">SILVER IV · 37 LP</div></div>
@@ -434,28 +523,28 @@
       </div></div></div></div>
   <div class="panel" id="p-lifetime"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Lifetime &amp; Milestones</div></div><div class="ms-card"><div class="ms-title">🏅 Arthevariel#666</div>
       <div class="ms-totals">
-        <div class="ms-tot"><span class="ms-tot-label">Record</span><span class="ms-tot-val">43W / 45L (49%)</span></div>
-        <div class="ms-tot"><span class="ms-tot-label">Lifetime K/D/A</span><span class="ms-tot-val">680 / 673 / 685</span></div>
+        <div class="ms-tot"><span class="ms-tot-label">Record</span><span class="ms-tot-val">44W / 45L (49%)</span></div>
+        <div class="ms-tot"><span class="ms-tot-label">Lifetime K/D/A</span><span class="ms-tot-val">699 / 687 / 699</span></div>
         <div class="ms-tot"><span class="ms-tot-label">Lifetime KDA</span><span class="ms-tot-val">2.03</span></div>
-        <div class="ms-tot"><span class="ms-tot-label">Time played</span><span class="ms-tot-val">43h 28m</span></div>
+        <div class="ms-tot"><span class="ms-tot-label">Time played</span><span class="ms-tot-val">44h 11m</span></div>
         <div class="ms-tot"><span class="ms-tot-label">Pentakills</span><span class="ms-tot-val">2</span></div>
-        <div class="ms-tot"><span class="ms-tot-label">Games</span><span class="ms-tot-val">88</span></div>
+        <div class="ms-tot"><span class="ms-tot-label">Games</span><span class="ms-tot-val">89</span></div>
       </div>
       <div class="ms-next-label">Next milestones</div><div class="ms-row"><span class="ms-icon">🎮</span>
+        <div class="ms-bar-track"><div class="ms-bar" style="width:78%"></div></div>
+        <span class="ms-label">89 / 100 games played</span></div><div class="ms-row"><span class="ms-icon">🏆</span>
         <div class="ms-bar-track"><div class="ms-bar" style="width:76%"></div></div>
-        <span class="ms-label">88 / 100 games played</span></div><div class="ms-row"><span class="ms-icon">🏆</span>
-        <div class="ms-bar-track"><div class="ms-bar" style="width:72%"></div></div>
-        <span class="ms-label">43 / 50 wins</span></div><div class="ms-row"><span class="ms-icon">⚔️</span>
-        <div class="ms-bar-track"><div class="ms-bar" style="width:36%"></div></div>
-        <span class="ms-label">680 / 1,000 kills</span></div><div class="ms-row"><span class="ms-icon">🤝</span>
+        <span class="ms-label">44 / 50 wins</span></div><div class="ms-row"><span class="ms-icon">⚔️</span>
+        <div class="ms-bar-track"><div class="ms-bar" style="width:40%"></div></div>
+        <span class="ms-label">699 / 1,000 kills</span></div><div class="ms-row"><span class="ms-icon">🤝</span>
+        <div class="ms-bar-track"><div class="ms-bar" style="width:40%"></div></div>
+        <span class="ms-label">699 / 1,000 assists</span></div><div class="ms-row"><span class="ms-icon">💀</span>
         <div class="ms-bar-track"><div class="ms-bar" style="width:37%"></div></div>
-        <span class="ms-label">685 / 1,000 assists</span></div><div class="ms-row"><span class="ms-icon">💀</span>
-        <div class="ms-bar-track"><div class="ms-bar" style="width:35%"></div></div>
-        <span class="ms-label">673 / 1,000 deaths</span></div><div class="ms-row"><span class="ms-icon">🌟</span>
+        <span class="ms-label">687 / 1,000 deaths</span></div><div class="ms-row"><span class="ms-icon">🌟</span>
         <div class="ms-bar-track"><div class="ms-bar" style="width:25%"></div></div>
         <span class="ms-label">2 / 5 pentakills</span></div><div class="ms-row"><span class="ms-icon">⏱️</span>
-        <div class="ms-bar-track"><div class="ms-bar" style="width:73%"></div></div>
-        <span class="ms-label">43 / 50 hours played</span></div></div><div class="ms-card"><div class="ms-title">🏅 Poepert#4217</div>
+        <div class="ms-bar-track"><div class="ms-bar" style="width:77%"></div></div>
+        <span class="ms-label">44 / 50 hours played</span></div></div><div class="ms-card"><div class="ms-title">🏅 Poepert#4217</div>
       <div class="ms-totals">
         <div class="ms-tot"><span class="ms-tot-label">Record</span><span class="ms-tot-val">5W / 10L (33%)</span></div>
         <div class="ms-tot"><span class="ms-tot-label">Lifetime K/D/A</span><span class="ms-tot-val">101 / 112 / 126</span></div>
@@ -617,7 +706,7 @@
         <span class="hof-value">8L</span></div>
         <div class="hof-runners"><span class="hof-other">Poepert 5L</span><span class="hof-other">Kocheri 4L</span></div></div><div class="hof-row"><div class="hof-def"><span class="hof-emoji">🤡</span>Games With 10+ Deaths</div>
         <div class="hof-leader"><span class="hof-holder">Arthevariel#666</span>
-        <span class="hof-value">26</span></div>
+        <span class="hof-value">27</span></div>
         <div class="hof-runners"><span class="hof-other">Poepert 4</span><span class="hof-other">67 Machine 69 4</span></div></div></div>
   <div class="panel" id="p-nemesis"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Nemesis Board</div></div><div class="nem-card"><div class="nem-title">Arthevariel#666</div>
       <div class="nem-row"><span class="nem-champ">Viego</span>
@@ -675,8 +764,8 @@
         <span class="nem-count">4×</span></div><div class="nem-row"><span class="nem-champ">MissFortune</span>
         <div class="nem-bar-track"><div class="nem-bar" style="width:57.14285714285714%"></div></div>
         <span class="nem-count">4×</span></div></div></div>
-  <div class="panel" id="p-weekly"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Weekly Report</div></div><div class="wk-card"><div class="wk-head"><span class="wk-name">Arthevariel#666</span><span class="wk-lp good">+24 LP</span></div>
-      <div class="wk-line">16W / 14L · 53% WR · most played Garen</div>
+  <div class="panel" id="p-weekly"><div class="panel-head"><button class="back-btn" onclick="showHome()">← Consoles</button><div class="panel-title">Weekly Report</div></div><div class="wk-card"><div class="wk-head"><span class="wk-name">Arthevariel#666</span><span class="wk-lp good">+42 LP</span></div>
+      <div class="wk-line">17W / 14L · 55% WR · most played Garen</div>
       <div class="wk-game good">▲ Best: 8/2/4 on Nasus (6.00)</div>
       <div class="wk-game bad">▼ Worst: 2/9/1 on Jax (0.33)</div></div><div class="wk-card"><div class="wk-head"><span class="wk-name">Poepert#4217</span><span class="wk-lp bad">-44 LP</span></div>
       <div class="wk-line">3W / 5L · 38% WR · most played Sivir</div>
